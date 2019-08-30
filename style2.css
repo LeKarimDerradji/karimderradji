@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+hr {
+  margin-left: 0;
+  margin-right: 0;
+  border: solid 1px #29B6F6;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+#main {
+  display: flex;
+  flex-flow: column;
+  flex-basis: 100%;
+  text-align: center;
+  flex: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#Karim {
+  color: #29B6F6;
+}
+
+#dev_under {
+  text-decoration: underline #29B6F6;
+}
+
+header {
+  text-align: left;
+  font-size: 2rem;
+  line-height: 0.7;
+  font-weight: lighter;
+}
+
+header > h1 {
+  font-family: 'Playfair display', serif;
+}
+
+header > h2 {
+  font-size: 1em;
+  color: grey;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.wrapper_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wrapper_list_recommandation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wrapper_list_recommandation > .wrapper_list2 {
+  margin-left: 50%;
+}
+
+.wrapper_list1 {
+  margin-right: 1em;
+}
+
+.wrapper_list2 {
+  flex-grow: 0;
+  flex-shrink: 3;
+  text-align: justify;
+  flex-basis: 60%;
+}
+
+i {
+  color: #4FC3F7;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: 'Playfair Display', serif;
+}
+
+img {
+  width: 50%;
+  border-radius: 50%;
+  margin-bottom: 1%;
+}
+
+#pp_wrapper {
+  padding: 0;
+  margin-bottom: 1%;
+}
+
+
+aside {
+  background-color: #4FC3F7;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  flex-shrink: 0;
+  text-align: center;
+  justify-content: space-between;
+}
+
+aside > div {
+  margin-bottom: 0.1em;
+}
+
+aside > div > p {
+  text-align: justify;
+  padding: 0;
+  font-size: 1.2em;
+  padding: 10%;
+
+}
+
+
+aside > div > h1 {
+  background-color: #212121;
+  height: 50px;
+  padding: auto;
+  color: #4FC3F7;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div > i {
+  color: black;
+  font-size: 4em;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 2.5em;
+}
