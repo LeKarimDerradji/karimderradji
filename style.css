@@ -5,15 +5,21 @@ body {
   flex-direction: row-reverse;
 }
 
+/* */
+
 hr {
   margin-left: 0;
   margin-right: 0;
   border: solid 1px #29B6F6;
 }
 
+/* */
+
 p {
   font-size: 1.3em;
 }
+
+/* */
 
 #main {
   display: flex;
@@ -25,13 +31,19 @@ p {
   margin-right: 5%;
 }
 
+/* */
+
 #Karim {
   color: #29B6F6;
 }
 
+/* */
+
 #dev_under {
   text-decoration: underline #29B6F6;
 }
+
+/* */
 
 header {
   text-align: left;
@@ -39,6 +51,8 @@ header {
   line-height: 0.7;
   font-weight: lighter;
 }
+
+/* */
 
 header > h1 {
   font-family: 'Playfair display', serif;
@@ -104,7 +118,7 @@ img {
 }
 
 
-aside {
+#bannière {
   background-color: #4FC3F7;
   display: flex;
   flex-direction: column;
@@ -114,11 +128,11 @@ aside {
   justify-content: space-between;
 }
 
-aside > div {
+#bannière > div {
   margin-bottom: 0.1em;
 }
 
-aside > div > p {
+#bannière > div > p {
   text-align: justify;
   padding: 0;
   font-size: 1.2em;
@@ -127,10 +141,9 @@ aside > div > p {
 }
 
 
-aside > div > h2 {
+#bannière > div > h2 {
   background-color: #212121;
   height: 50px;
-  padding: auto;
   color: #4FC3F7;
   display: -webkit-flex;
   display: -ms-flex;
