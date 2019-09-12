@@ -67,6 +67,11 @@ header>h1 {
   font-size: 1.2em;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /* Style appliqué en flex sur la div qui constient les sections respectives
 "FORMATION" et "EXPÉRIENCE"
 Les deux éléments à l'intérieur sont placé en colone pour que les éléments hérient
@@ -75,6 +80,7 @@ de cette attitude*/
   display: flex;
   flex-direction: column;
   text-align: left;
+  justify-content: space-between;
 }
 
 /* Les deux autres div à l'intérieur de cette div sont en rangé
@@ -121,7 +127,7 @@ i {
 /* Caractéristique générale des h2 */
 h2 {
   font-size: 1.5em;
-  font-family: 'Gayathri', serif;
+  font-family: 'Gayathri', sans-serif;
 }
 
 /* Taille, margin et apparence de l'image */
@@ -143,7 +149,7 @@ afin que celle-ci soit placé comme dans la maquette */
 Tout les éléments sont en column,
 Elle possède une flex-basis de 30%
 Pour faire respecter les dimensions de la maquette*/
-#bannière {
+#banniere {
   background-color: #4FC3F7;
   display: flex;
   flex-direction: column;
@@ -156,7 +162,7 @@ Pour faire respecter les dimensions de la maquette*/
 /* Caractéristique des paragraphe à l'intérieur
 de la bannnière afin que ceci apparaissent
 comme des blocs de texte */
-#bannière>div>p {
+#banniere>div>p {
   text-align: justify;
   padding: 0;
   font-size: 1.2em;
@@ -166,7 +172,7 @@ comme des blocs de texte */
 /* Style appliqué aux h2 de la bannière
 afin que ceci ait un fond grisâtre,
 et que le texte soit au centre */
-#bannière>div>h2 {
+#banniere>div>h2 {
   background-color: #212121;
   height: 50px;
   color: #4FC3F7;
@@ -203,7 +209,6 @@ côté à côté */
     -ms-flex-direction: column;
     flex-direction: column;
     flex-basis: auto;
-    line-height: 12pt;
   }
 
   .DevTittle {
@@ -242,7 +247,7 @@ côté à côté */
     align-items: flex-start;
   }
 
-  #bannière {
+  #banniere {
     flex-grow: 0;
   }
 
@@ -250,13 +255,16 @@ côté à côté */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   body {
-    flex-grow: none;
     font-size: 1.2em;
     line-height: normal;
   }
 
-  .wrapper_list_recommandation > .wrapper_list2{
-   margin-right: 0;
+  .wrapper {
+    margin: auto;
+  }
+
+  .wrapper_list_recommandation {
+  margin-bottom: 1px;
   }
 
 }
@@ -271,7 +279,7 @@ côté à côté */
     font-size: 3em;
   }
 
-  #bannière>div>h2 {
+  #banniere>div>h2 {
     height: 100px
   }
 
