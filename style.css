@@ -256,10 +256,10 @@ côté à côté */
     align-items: flex-start;
   }
 
-  #banniere>#pp_wrapper {
+  #banniere>#pp_wrapper  {
     flex-grow: 0;
     order: -1;
-    position: relative;
+
   }
 }
 
