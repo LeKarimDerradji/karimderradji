@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   font-family: 'Roboto', sans-serif;
+  width: 100%;
 }
 
 /* Style appliqué sur la ligne de rupture thématique */
@@ -32,10 +33,11 @@ les éléments de la section principale de droite */
   display: flex;
   flex-flow: column;
   flex-basis: 100%;
-  text-align: center;
+  text-align: left;
   flex: auto;
   margin-left: 5%;
   margin-right: 5%;
+  justify-content: space-between;
 }
 
 /* Le prénom coloré de la couleur principale du thème */
@@ -72,6 +74,7 @@ header>h1 {
   flex-direction: column;
   justify-content: space-between;
 }
+
 /* Style appliqué en flex sur la div qui constient les sections respectives
 "FORMATION" et "EXPÉRIENCE"
 Les deux éléments à l'intérieur sont placé en colone pour que les éléments hérient
@@ -109,7 +112,7 @@ qu'elles soit le plus espacées l'une et l'autre */
 .wrapper_list2 {
   flex-grow: 0;
   flex-shrink: 3;
-  text-align: justify;
+  text-align: left;
   flex-basis: 60%;
 }
 
@@ -163,7 +166,7 @@ Pour faire respecter les dimensions de la maquette*/
 de la bannnière afin que ceci apparaissent
 comme des blocs de texte */
 #banniere>div>p {
-  text-align: justify;
+  text-align: left;
   padding: 0;
   font-size: 1.2em;
   padding: 10%;
@@ -217,11 +220,11 @@ côté à côté */
   }
 
   p {
-    font-size: 0.9em;
+    font-size: 15px;
   }
 
   h3 {
-    font-size: 0.9em;
+    font-size: 18px;
   }
 
   header {
@@ -233,6 +236,12 @@ côté à côté */
   }
 
   .wrapper_list {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     text-align: left;
     flex-grow: 0;
   }
@@ -247,10 +256,11 @@ côté à côté */
     align-items: flex-start;
   }
 
-  #banniere {
+  #banniere>#pp_wrapper {
     flex-grow: 0;
+    order: -1;
+    position: relative;
   }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -259,20 +269,41 @@ côté à côté */
     line-height: normal;
   }
 
+  .DevTittle {
+    font-size: 2em;
+    line-height: normal;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
   .wrapper {
     margin: auto;
   }
 
   .wrapper_list_recommandation {
-  margin-bottom: 1px;
+    margin-bottom: 1px;
   }
 
+  #banniere {
+    word-wrap: break-word;
+    font-size: 18px;
+  }
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
   body {
-    font-size: 2em;
-    flex:none;
+    font-size: 1.3em;
+    flex: none;
   }
 
   header {
@@ -287,4 +318,14 @@ côté à côté */
     width: 60%;
   }
 
+@media screen and (min-width: 2560px) {
+  body {
+    font-size: 2.2em;
+    line-height: normal;
+  }
+
+  .DevTittle {
+    line-height: normal;
+  }
+}
 }
