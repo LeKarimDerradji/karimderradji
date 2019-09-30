@@ -269,6 +269,10 @@ côté à côté */
     align-items: flex-start;
   }
 
+  #banniere {
+    order: -1;
+  }
+
   #banniere>#pp_wrapper  {
     flex-grow: 0;
     order: -1;
