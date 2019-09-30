@@ -311,6 +311,10 @@ côté à côté */
     margin-bottom: 1px;
   }
 
+  #pp_wrapper>img {
+    width: 60%;
+  }
+
   #banniere {
     word-wrap: break-word;
     font-size: 18px;
